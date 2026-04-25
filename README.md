@@ -40,7 +40,7 @@ Z = cos( freq.*(h.*X + k.*Y) );
 ```
 
 And this is the function I just came up with, available
-here at [[wave_dir.m]] y'all.
+here at [wave_dir](wave_dir.m) y'all.
 
 It makes linear waves that could either look like this:
 ![sample1](sample1.png)
