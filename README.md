@@ -7,8 +7,8 @@ $$
 \vec{Z} (A,B) = z \cos f \left( A \hat{x} + B \hat{y} \right) \hat{z}
 $$
 
-In which, believe it or not, we can say the $\hat(x)$ and
-$\hat(y)$ vectors are actually the meshgrid objects, $f$
+In which, believe it or not, we can say the $\hat{x}$ and
+$\hat{y}$ vectors are actually the meshgrid objects, $f$
 is the frequency and $A,B$ are the components of the
 direction vector of the plane that sits perpendicular to
 the wave front.
