@@ -42,8 +42,8 @@ contour(X1,Y1,Z1)
 
 ![Figura 1](ii1.png)
 
-Esta es una lineal
+This is a cubic interpolation
 
 ![Figura 2](ii2.png)
 
-Esta es una interpolación cúbica
+And this is a linear interpolation
