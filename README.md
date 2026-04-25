@@ -1,3 +1,12 @@
+# Wave thingy
+
+It makes linear waves that could either look like this:
+![sample1](sample1.png)
+
+Or like this:
+![sample2](sample2.png)
+
+
 # Interpolation mechanism on MATLAB/GNU Octave.
 
 I am discussing with y'all this wonderful mathematical tool in the context of this very powerful math 
