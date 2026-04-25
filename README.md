@@ -1,5 +1,44 @@
 # Wave thingy
 
+While still working on something new, I sumbled across some curious realization while mathematically trying to adress the
+parameters of a cosine function, in which I accidentally inputed this details and suddenly it turned into this formula:
+
+$$
+\vec{Z} (A,B) = z \cos f \left( A \hat{x} + B \hat{y} \right) \hat{z}
+$$
+
+In which, believe it or not, we can say the $\hat(x)$ and
+$\hat(y)$ vectors are actually the meshgrid objects, $f$
+is the frequency and $A,B$ are the components of the
+direction vector of the plane that sits perpendicular to
+the wave front.
+
+Based on this, I decided to put this into a full
+standard MATLAB function, by writing all of these
+details into it.
+
+For keeping it simple, I kept frequency as _natural_
+and assumed direction angle would be provided in
+degrees; while I ask for the `x` and `y` meshgrid
+objects to porperly locate the values of my function
+in the space.
+
+```matlab
+function Z = wave_dir(X, Y, freq, dir)
+
+% Be X and Y two meshgrid matrices,
+% and Z its correspondent value.
+%
+% dir is an angle to which the wave
+% is directed.
+%
+% freq is the wave s frequency
+
+h = cosd(dir); k = sind(dir);
+
+Z = cos( freq.*(h.*X + k.*Y) );
+```
+
 It makes linear waves that could either look like this:
 ![sample1](sample1.png)
 
